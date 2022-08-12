@@ -23,4 +23,28 @@ func main() {
 
 	fmt.Println("pi: ", pi)
 	fmt.Println("pi2: ", pi2)
+
+	//opeardores
+	num1 := 10
+	num2 := 15
+
+	//suma
+	result := num1 + num2
+	fmt.Println("Suma ", result)
+
+	//Resta
+	result = num1 - num2
+	fmt.Println("Resta ", result)
+
+	//Multiplicacion
+	result = num1 * num2
+	fmt.Println("Multiplicacion ", result)
+
+	//Division
+	result = num1 / num2
+	fmt.Println("Division ", result)
+
+	//Increment
+	num1++
+	fmt.Println(num1)
 }
