@@ -1,6 +1,10 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"log"
+	"strconv"
+)
 
 // functions
 func funcion(message string) {
@@ -78,4 +82,11 @@ func main() {
 	if value1 == 1 {
 		fmt.Println("Es uno")
 	}
+
+	//Convertir texto a numero strconv return value, error
+	value, error := strconv.Atoi("43")
+	if error != nil {
+		log.Fatal(error)
+	}
+	fmt.Println("Value : ", value)
 }
