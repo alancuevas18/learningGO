@@ -2,6 +2,17 @@ package main
 
 import "fmt"
 
+// functions
+func funcion(message string) {
+	fmt.Println(message)
+}
+func returnValue(a int) int {
+	return a + 2
+}
+
+func multipleArguments(a int) (c, b int) {
+	return a, a * 2
+}
 func main() {
 	// Constantes
 	const pi float64 = 3.14
@@ -47,4 +58,24 @@ func main() {
 	//Increment
 	num1++
 	fmt.Println(num1)
+
+	//funciones
+	funcion("Impimir desde funcion")
+	fmt.Println(returnValue(4))
+
+	return1, _ := multipleArguments(4)
+	fmt.Println(return1)
+	fmt.Println(multipleArguments(4))
+
+	//Ciclos
+	for i := 0; i < 10; i++ {
+		fmt.Println(i)
+	}
+
+	//Condicionales
+	value1 := 1
+
+	if value1 == 1 {
+		fmt.Println("Es uno")
+	}
 }
